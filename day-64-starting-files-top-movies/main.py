@@ -51,7 +51,7 @@ with app.app_context():
 
 class SearchForm(FlaskForm):
     title = StringField('Movie Title', validators=[DataRequired()])
-    submit  = SubmitField('Add Movie')
+    submit  = SubmitField('Search Movie')
 
 class DetailsForm(FlaskForm):
     ranking = StringField('Your Rating out of 10', validators=[DataRequired()])

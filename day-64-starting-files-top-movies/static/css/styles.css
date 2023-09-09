@@ -317,3 +317,19 @@ a:hover{
  .release_date {
 	 font-weight: normal;
 }
+
+.add-movies-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.add-movie-form {
+	max-width: 90vw;
+	color: white;
+	margin-top: 3rem;
+	border: 5px solid #E19898;
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.7);
+}

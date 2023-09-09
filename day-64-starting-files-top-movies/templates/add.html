@@ -3,8 +3,12 @@
 {% block title %}Add Movie{% endblock %}
 
 {% block content %}
-<div class="content">
-    <h1 class="heading">Add a Movie</h1>
-    {{ render_form(form, novalidate = True) }}
+<div class="add-movies-content">
+    <nav class="nav-bar">
+        <h1 class="heading">ADD A MOVIE</h1>
+    </nav>
+    <div class="add-movie-form">
+        {{ render_form(form, novalidate = True) }}
+    </div>
 </div>
 {% endblock %}
