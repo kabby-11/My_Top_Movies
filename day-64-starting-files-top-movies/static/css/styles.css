@@ -3,6 +3,11 @@
 	 margin: 0;
 	 padding: 0;
 }
+
+body{
+	overflow: hidden;
+}
+
 .container{
 	display: flex;
 	flex-direction: column;
@@ -14,6 +19,7 @@
 	position: absolute;
 	z-index: -1;
 	width: 100vw;
+	backdrop-filter: blur(0.5);
 }
 
  /* html {
