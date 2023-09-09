@@ -5,9 +5,13 @@
 {% block content %}
 
 <div class="container">
-  <h1 class="heading">My Top 10 Movies</h1>
-  <p class="description">These are my all-time favourite movies.</p>
-    {% for movie in movies %}
+  <nav class="nav-bar">
+    <!-- <h1 class="heading">MY TOP MOVIES</h1> -->
+    <img src="/static/images/my_top_movies.png" alt="icon">
+  </nav>
+  <main>
+    <p class="description">These are my all-time favourite movies.</p>
+ {% for movie in movies %}
   <div class="card" >
     <div class="front" style="background-image: url('{{ movie.img_url }}');">
         <p class="large">1</p>
@@ -30,6 +34,7 @@
       </div>
     </div>
   </div>
+  </main>
 </div>
  {% endfor %}
 <div class="container text-center add">
